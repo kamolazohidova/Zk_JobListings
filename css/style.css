@@ -41,6 +41,11 @@ html {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 2px dotted var(--accent-text-color);
+    outline-offset: 3px;
+}
+
 img {
     width: 100%;
     height: auto;
