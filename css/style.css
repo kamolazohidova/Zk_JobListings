@@ -1,0 +1,236 @@
+/* FONTS  */
+@font-face {
+    font-family: "League Spartan";
+    src: url("../fonts/") format("woff2"),
+        url("../fonts/LeagueSpartan-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url("../fonts/LeagueSpartan-Bold.woff2") format("woff2"),
+        url("../fonts/LeagueSpartan-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ROOT  */
+:root {
+    --heading-color: #2b3939;
+    --text-color: #5ca5a5;
+    --accent-text-color: #7C8F8F;
+    --accent-color: #fff;
+    --font-family: "Spartan", "Arial", sans-serif;
+}
+
+
+/* GLOBAL  */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*, 
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+    background-color: rgba(92, 165, 165, 0.1);
+}
+
+
+/* CONTAINER  */
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* BUTTON  */
+.button {
+    padding: 6px;
+    border-radius: 12px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.button-primary {
+    background-color: var(--text-color);
+    margin-right: 8px;
+}
+
+.button-dark {
+    background-color: var(--heading-color);
+}
+
+/* MAIN-CONTENT  */
+.main-content {
+    flex-grow: 1;
+}
+
+
+/* SITE-HEADER  */
+.site-header {
+    margin-bottom: 76px;
+}
+
+
+/* MAIN  */
+.hero-wrapper {
+    margin-top: 0;
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+}
+
+.hero-wrapper:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.hero-wrapper:nth-child(10n) {
+    margin-bottom: 120px;
+}
+
+.hero-wrapper-img {
+    width: 88px;
+    height: 88px;
+    margin-right: 24px;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.hero-inner-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.hero-inner-info-text {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
+    margin-right: 16px;
+}
+
+.hero-inner-info-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-heading {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--heading-color);
+}
+
+.inner-time {
+    display: flex;
+    align-items: center;
+}
+
+.inner-time-info {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--accent-text-color);
+    margin: 0;
+    margin-right: 16px;
+}
+
+.inner-time-item {
+    margin: 0;
+    padding: 0;
+    color: var(--accent-text-color);
+    margin-right: 16px;
+}
+
+.inner-time-link {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--accent-text-color);
+}
+
+.inner-time-link:not(:last-child) {
+    margin-right: 16px;
+}
+
+
+/* NAVBAR  */
+.sitenav {
+    margin-left: auto;
+}
+
+.sitenav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.sitenav-link {
+    padding: 4px 8px;
+    margin: 0;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--text-color);
+    background-color: rgba(92, 165, 165, 0.1);;
+}
