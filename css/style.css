@@ -174,6 +174,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     color: var(--heading-color);
+    transition: color 0.4s ease;
 }
 
 .hero-heading:hover {
@@ -246,7 +247,9 @@ body {
     font-size: 13px;
     line-height: 24px;
     color: var(--text-color);
-    background-color: rgba(92, 165, 165, 0.1);;
+    background-color: rgba(92, 165, 165, 0.1);
+    transition:  background-color 0.4s ease,
+    color 0.4s ease;
 }
 
 .sitenav-link:hover {
