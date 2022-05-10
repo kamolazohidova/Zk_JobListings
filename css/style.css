@@ -168,7 +168,7 @@ body {
     margin-bottom: 8px;
 }
 
-.job-listings-company-name {
+.job-listings-company__name {
     font-family: var(--font-family);
     font-size: 14px;
     line-height: 16px;
@@ -216,12 +216,12 @@ body {
     color: var(--accent-text-color);
 }
 
-.job-listings-meta-item:not(:last-child) {
+.job-listings-meta__item:not(:last-child) {
     position: relative;
     margin-right: 36px;
 }
 
-.job-listings-meta-item:not(:last-child)::after {
+.job-listings-meta__item:not(:last-child)::after {
     position: absolute;
     right: -20px;
     top: 50%;
@@ -238,18 +238,18 @@ body {
     margin-left: auto;
 }
 
-.sitenav-list {
+.sitenav__list {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.sitenav-item:not(:last-child) {
+.sitenav__item:not(:last-child) {
     margin-right: 24px;
 }
 
-.sitenav-link {
+.sitenav__link {
     padding: 4px 8px;
     margin: 0;
     border-radius: 4px;
@@ -263,12 +263,12 @@ body {
     color 0.4s ease;
 }
 
-.sitenav-link:hover {
+.sitenav__link:hover {
     background-color: var(--text-color);
     color: var(--accent-color);
 }
 
-.sitenav-link:active {
+.sitenav__link:active {
     background-color: var(--text-color);
     color: var(--accent-color);
     opacity: 0.6;
